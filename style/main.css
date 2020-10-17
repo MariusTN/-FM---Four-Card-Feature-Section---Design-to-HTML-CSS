@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.6rem;
+  color: #a3a5ae;
+}
+
+a {
+  color: #ea5353;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header {
+  margin: 5rem auto;
+  max-width: 55vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .strong {
+  font-weight: 600;
+}
+
+header p {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 125rem;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .box {
+  height: 30rem;
+  width: 35rem;
+  margin: 1.5rem;
+  padding: 3rem;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  border-top: 10px solid #00FF00;
+}
+
+.container .box h2 {
+  margin: 0;
+}
+
+.container .box p {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.container .box img {
+  display: block;
+  margin-left: auto;
+}
+
+.container .box1 {
+  border-top: 3px solid #45d3d3;
+  border-radius: 1rem;
+}
+
+.container .box2 {
+  border-top: 3px solid #ea5353;
+  border-radius: 1rem;
+}
+
+.container .box3 {
+  border-top: 3px solid #fcaf4a;
+  border-radius: 1rem;
+}
+
+.container .box4 {
+  border-top: 3px solid #549ef2;
+  border-radius: 1rem;
+}
+
+.container .push {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 1155px) {
+  .container .push {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,6 @@
 @import 'variables';
 
+//default values reset and making them responsive
 *{
     margin: 0;
     padding: 0;
@@ -8,4 +9,127 @@
 
 html{
     font-size: 62.5%;
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: $font;
+    background-color: $verylightgray;
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 200;
+    margin:0;
+}
+
+h2{
+    font-size: 2.6rem;
+}
+
+p{
+    font-size: 1.6rem;
+
+    //all p's has Graysh-color so I will make this global than to do it specific to one area, if someone will ever read this, is for you!
+    color: $grayishblue;
+}
+
+//removing all the defaults on Hyperlink , color to red, font size to 20px
+a{
+    color: $red;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+header{
+    //Top-bottom 50px/5rem and auto (left-right) to center it
+    margin: 5rem auto;
+    //max width
+    max-width: 55vh;
+    //centering everything
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // text-align: center; - easier than Flexbox
+
+    //h1 strong class
+    .strong{
+        font-weight: 600;
+    }
+    //P inside the header (SCSS btw so it's a nest here)
+    p{
+        text-align: center;   
+    }
+}
+
+.container{
+    display: flex;
+    max-width: 125rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .box{
+        height: 30rem;
+        width: 35rem;
+        margin: 1.5rem;
+        padding: 3rem;
+        background: #fff;
+        box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: 0.5);
+        // border-radius: 1rem;
+        border-top: 10px solid #00FF00;
+        
+        
+        h2{
+            margin:0;
+        }
+        p{
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+        }
+    }
+    .box1{
+        border-top: 3px solid $cyan;
+        border-radius: 1rem;
+    }
+
+    .box2{
+        border-top: 3px solid $red;
+        border-radius: 1rem;
+
+    }
+    .box3{
+        border-top: 3px solid $orange;
+        border-radius: 1rem;
+
+    }
+    .box4{
+        border-top: 3px solid $blue;
+        border-radius: 1rem;
+    }
+    .push{
+        transform: translateY(50%);
+    }
+}
+
+footer{
+    text-align: center;
+}
+//removing push action when it doesn't look good
+@media (max-width: 1155px){
+    .container .push{
+        transform: translateY(0);
+    }    
+}
+
+
+//Mobile
+@media (max-width: 375px){
+
+
 }
